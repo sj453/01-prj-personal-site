@@ -1,1 +1,382 @@
-/* Add you CSS here */
+/* Style for the navigation bar */
+.navbar {
+  background-color: #000; /* Black background */
+  padding: 12px 0;           /* Space inside the bar */
+  text-align: center;        /* Center the links */
+}
+
+.navbar a {
+  text-decoration: none;     /* Remove underline from links */
+  color: #fff;               /* Make navbar links white on the home page */
+  margin: 0 20px;            /* Space between links */
+  font-size: 18px;           /* Smaller nav links */
+  font-weight: bold;         /* Make the text bold */
+  transition: color 0.2s;    /* Smooth color change */
+}
+
+.navbar a:hover {
+  color: #00c853;            /* Keep green on hover for contrast */
+}
+
+/* Style for the welcome section */
+.welcome {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  background: #000; /* Black background for welcome section */
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-strip {
+  display: none; /* Remove the white strip since background is now black */
+}
+
+.welcome h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #fff; /* White text for contrast on black */
+  position: relative;
+  z-index: 2;
+  padding: 20px 0 20px 0;
+}
+
+.welcome p {
+  font-size: 18px;              /* Smaller welcome message */
+  color: #fff;                  /* Make the welcome message white */
+}
+
+/* Style for the about section */
+.about {
+  text-align: center;           /* Center the text */
+  margin-top: 60px;             /* Space above the about section */
+}
+
+.about h2 {
+  color: #fff;                  /* Make all section text white on the home page */
+}
+
+.about p {
+  color: #fff;                  /* Make all section text white on the home page */
+  font-size: 18px;
+}
+
+/* Set a CPU-themed background using the provided image */
+body {
+  background-image: url('pngtree-stunning-3d-render-of-a-fantastic-textured-interface-background-picture-image_5813151.jpg'); /* Use the new PNGTree image for the home page background */
+  background-size: cover;      /* Make the image cover the whole page */
+  background-repeat: no-repeat;/* Do not repeat the image */
+  background-position: center; /* Center the image */
+  min-height: 100vh;           /* Make sure the background covers the whole viewport */
+  color: #fff;                 /* Keep text white for readability */
+}
+
+body.journey-bg {
+  background-image: url('Screenshot 2024-07-26 010237.jpg'); /* Use the screenshot as background for about page */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #000; /* Keep text black for readability */
+}
+
+body.contact-bg {
+  background-image: url('cpu-circuit-motherboard-technology-computer-background_1031607-2834.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #000; /* Use black text for readability */
+}
+
+.contact {
+  background: #000; /* Black background for contact section */
+  border-radius: 12px;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.contact h1, .contact p, .contact a {
+  color: #fff !important; /* White text for readability on black */
+}
+
+.journey {
+  background: #000; /* Black background for about/journey section */
+  border-radius: 12px;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.journey h1, .journey h2, .journey p, .journey strong, .journey .highlight {
+  color: #fff !important; /* White text for readability on black */
+}
+
+.journey h1 {
+  color: #000; /* Black heading */
+}
+
+.journey h1 .emoji {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.journey strong {
+  color: #007acc; /* Blue for emphasis */
+}
+
+.journey .highlight {
+  background: #d0f8ce; /* Light green background */
+  padding: 2px 6px;
+  border-radius: 6px;
+  color: #006400; /* Dark green text */
+  font-weight: bold;
+}
+
+.journey p {
+  color: #000; /* Black text */
+  font-size: 18px;
+}
+
+.journey-icons {
+  margin-top: 18px;
+  font-size: 2em;
+  letter-spacing: 10px;
+}
+
+.journey-icons span {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.journey-icons span:hover {
+  transform: scale(1.2) rotate(-10deg);
+}
+
+/* Style for the company section */
+.company {
+  background: #000; /* Black background for company section */
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company h2, .company-name {
+  color: #fff;
+}
+
+.company h2 {
+  color: #007acc;
+}
+
+.company-name {
+  color: #00c853;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+/* Style for the hero section */
+.hero {
+  background: #000;
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero h2 {
+  font-size: 24px;              /* Smaller hero heading */
+  color: #fff;                  /* White heading */
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;              /* Smaller hero text */
+  color: #fff;                  /* White text */
+  margin-bottom: 18px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #00c853;          /* Green button */
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;              /* Smaller button text */
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.hero-btn:hover {
+  background: #007acc;          /* Blue on hover */
+}
+
+/* Style for the achievements section */
+.achievements {
+  background: #000;
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.achievements h2 {
+  font-size: 24px;              /* Smaller achievements heading */
+  color: #fff;
+}
+
+.achievement-icon {
+  width: 160px;         /* Bigger icon size */
+  height: 160px;
+  object-fit: cover;   /* Crop to fit nicely */
+  border-radius: 12px; /* Rounded corners */
+  margin-bottom: 10px;
+  border: 2px solid #00c853; /* Green border for highlight */
+}
+
+.achievements p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 18px;
+}
+
+.achievement-desc {
+  background: #000; /* Black background for achievement description */
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  max-width: 320px;
+  text-align: left;
+  font-size: 14px;              /* Smaller achievement description */
+}
+
+.achievement-desc strong {
+  color: #fff;
+  font-size: 1em;             /* Smaller strong text */
+}
+
+.contact {
+  background: #000; /* Black background for contact section */
+  border-radius: 12px;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.contact h1, .contact p, .contact a {
+  color: #fff !important; /* White text for readability on black */
+}
+
+/* Style for the skills section */
+.skills {
+  background: #000;
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills h2 {
+  color: #fff;             /* White heading for skills */
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.skills ul {
+  list-style: none;        /* Remove default bullets */
+  padding: 0;
+}
+
+.skills li {
+  color: #fff;             /* White text for skills */
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: inline-block;   /* Display skills in a row */
+  margin-right: 18px;
+}
+
+.skills li:last-child {
+  margin-right: 0;
+}
+
+.skill-icon {
+  width: 48px;              /* Make icon bigger */
+  height: 48px;             /* Make icon bigger */
+  vertical-align: middle;
+  margin-right: 6px;
+  border-radius: 6px;
+}
+
+.skills span[role="img"] {
+  font-size: 2em;           /* Make emoji icons bigger */
+  vertical-align: middle;
+}
+
+/* Style for the mission section */
+.mission {
+  background: #000;
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.mission p {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Style for the top thumbnail image */
+.top-thumbnail {
+  width: 100%;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.thumbnail-img {
+  width: 120px; /* Beginner-friendly, not too big */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* Make the image a circle */
+  border: 4px solid #fff; /* White border for contrast */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for effect */
+}
